@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.ant-message {
+  z-index: 9999 !important;
+  position: fixed !important;
+}
