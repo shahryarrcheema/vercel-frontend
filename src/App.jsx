@@ -5,7 +5,7 @@ import { Button, Form, Image, Input, message, Modal, Select, Table } from 'antd'
 import { DeleteFilled, DeleteOutlined, EditFilled, EditOutlined, PlusOutlined } from '@ant-design/icons'
 import axios from 'axios'
 import useSwr,{mutate} from 'swr'
-axios.defaults.baseURL = 'http://localhost:1255'
+axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
 
 
 function App() {
