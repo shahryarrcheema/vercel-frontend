@@ -5,7 +5,8 @@ import { Button, Form, Image, Input, message, Modal, Select, Table } from 'antd'
 import { DeleteFilled, DeleteOutlined, EditFilled, EditOutlined, PlusOutlined } from '@ant-design/icons'
 import axios from 'axios'
 import useSwr,{mutate} from 'swr'
-axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
+axios.defaults.baseURL =' https://vercel-backend-seven-vert.vercel.app';
+
 
 
 function App() {
@@ -187,6 +188,10 @@ function App() {
     setId(null)
     regForm.resetFields()
   }
+
+
+console.log("Backend URL:", import.meta.env.VITE_BACKEND_URL);
+
 
   return (
     <>
